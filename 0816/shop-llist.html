@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			html body{
+				height: 100%;
+				width: 100%;
+				margin:0;
+				padding: 0;
+			}
+			.shop-list{
+				width: 190px;
+				margin:100px;
+				padding-bottom: 20px;
+				padding-top: 20px;
+				color: #fff;
+				background-color: #6e6568;
+				position: relative;
+				top: 0;
+				left: 0;
+			}
+			.shop-list a{
+				text-decoration: none;
+				color: #fff;
+
+			}
+			.shop-list h3{
+				font-weight: normal;
+				height: 20px;
+				line-height: 20px;
+				padding: 10px;
+				margin : 0;
+			}
+			.shop-list ul{
+				padding: 0;
+				margin :0;
+				list-style: none;
+			}
+			.shop-list ul li{
+				padding: 10px;
+				height: 20px;
+				line-height: 20px;
+			}
+			.shop-list ul li:hover{
+				background-color: #999395;
+			}
+			.shop-list ul li a:hover{
+				color: #c81623;
+			}
+			.shop-list .line{
+				margin:5px;
+			}
+			.content{
+				width: 800px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 189px;
+				display: none;
+				color: #c81623;
+				border: 1px solid #ccc;
+				font-size: 30px;
+				box-shadow: 0px 0px 10px rgba(3,3,3,.2);
+				text-align: center;
+			}
+			.shop-list ul li:hover .content{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class='shop-list'>
+			<h3><a href="#">全部商品分类</a></h3>
+			<ul>
+				<li><a href="#">家用电器</a>
+					<div class='content'>0</div>
+				</li>
+				<li><a href="#">手机</a><span class='line'>/</span><a href="#">运营商</a><span class='line'>/</span><a href="#">数码</a>
+					<div class='content'>1</div>
+				</li>
+				<li><a href="#">电脑</a><span class='line'>/</span><a href="#">办公</a>
+					<div class='content'>2</div>
+				</li>
+				<li><a href="#">家居</a><span class='line'>/</span><a href="#">家具</a><span class='line'>/</span><a href="#">家装</a>
+					<div class='content'>3</div>
+				</li>
+				<li><a href="#">男装</a><span class='line'>/</span><a href="#">女装</a><span class='line'>/</span><a href="#">童装</a>
+					<div class='content'>4</div>
+				</li>
+				<li><a href="#">美妆个护</a><span class='line'>/</span><a href="#">宠物</a>
+					<div class='content'>5</div>
+				</li>
+				<li><a href="#">女鞋</a><span class='line'>/</span><a href="#">箱包</a>
+					<div class='content'>6</div>
+				</li>
+				<li><a href="#">男鞋</a><span class='line'>/</span><a href="#">运动</a>
+					<div class='content'>7</div>
+				</li>
+				<li><a href="#">汽车</a><span class='line'>/</span><a href="#">汽车用品</a>
+					<div class='content'>8</div>
+				</li>
+				<li><a href="#">母婴</a><span class='line'>/</span><a href="#">玩具乐器</a>
+					<div class='content'>9</div>
+				</li>
+				<li><a href="#">食品</a><span class='line'>/</span><a href="#">酒类</a>
+					<div class='content'>10</div>
+				</li>
+				<li><a href="#">礼品鲜花</a><span class='line'>/</span><a href="#">农资绿植</a>
+					<div class='content'>11</div>
+				</li>
+				<li><a href="#">图书</a><span class='line'>/</span><a href="#">音像</a>
+					<div class='content'>12</div>
+				</li>
+			</ul>
+		</div>	
+	</body>
+</html>
