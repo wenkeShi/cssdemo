@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+		<head>
+			<meta  charset='UTF-8'/>
+			<style type='text/css'>
+				
+				.right-bar{
+					position:fixed;
+					height: 100%;
+					width: 40px;
+					top:-3px;
+					right: 0;
+					padding-top: 100px;
+					background-color: #000;
+				}
+				.vip ,.money ,.love,.star,.watch,.add,.back{
+					height: 40px;
+					position: relative;
+					top:0;
+					left: 0px;
+				}
+
+				.vip div ,.money div,.love div,.star div,.watch div,.add div,.back div{
+					background-color: #494949;
+					color: #fff;
+					position: absolute;
+					width: 120px;
+					height: 40px;
+					top: 0px;
+					right: 40px;
+					line-height: 40px;
+					text-align: center;
+					opacity;
+					font-size: 12px;
+					display: none;
+				}
+				.vip:hover div ,.money:hover div ,.love:hover div,.star:hover div,.watch:hover div,.add:hover div,.back:hover div{
+					display: block;
+				}
+				.vip:hover  ,.money:hover  ,.love:hover ,.star:hover ,.watch:hover ,.add:hover ,.back:hover {
+					background-color: #ff0036;
+				}
+				a{
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					background-position: center center;
+				}
+				.vip a{
+					background-image: url(./images/vipright.png);
+				}
+				.money a{
+					background-image: url(./images/mymoney.png);
+					}
+				.love a{
+					background-image: url(./images/love.png);
+				}
+				.star a{
+					background-image: url(./images/star.png);
+					
+				}
+				.watch a{
+					background-image: url(./images/watch.png);
+			
+				}
+				
+				.add a{
+					background-image: url(./images/chizhi.png);
+					
+				}
+				
+				.back a{
+					background-image: url(./images/fankui.png);
+				}
+				.buycar{
+					width: 40px;
+					height: 120px;
+					cursor: pointer;
+				}
+				.buycar:hover{
+					background-color: #ff0036;
+				}
+				.buycar .carico{
+					display: inline-block;
+					width: 40px;
+					height: 40px;
+					background-image: url(./images/buycar.png);
+					background-position: 5px center;
+				}
+				.buycar span{
+					display: inline-block;
+					width: 10px;
+					margin: 0 14px ;
+					font-size: 14px;
+					color: #fff;
+				}
+				.back{
+					position: absolute;
+					top: 580px;
+					right: 0px;
+				}
+			</style>
+		</head>
+		<body>
+			<div class='right-bar'>
+				<div class='vip'>
+					<a href='#'></a>
+					<div class=''>会员权益</div>
+				</div>
+				<div class='buycar'>
+					<i class='carico'></i>
+					<span>购物车</span>
+				</div>
+				<div class='money'>
+					<a href='#'></a>
+					<div class=''>我的资产</div>
+				</div>
+				<div class='love'>
+					<a href='#'></a>
+					<div class=''>我关注的品牌</div>
+				</div>
+				<div class='star'>
+					<a href='#'></a>
+					<div class=''>我的收藏</div>
+				</div>
+				<div class='watch'>
+					<a href='#'></a>
+					<div class=''>我看过的</div>
+				</div>
+				<div class='add'>
+					<a href='#'></a>
+					<div class=''>我要充值</div>
+				</div>
+				<div class='back'>
+					<a href='#'></a>
+					<div class=''>用户反馈</div>
+				</div>
+			</div>
+		</body>
+</html>
