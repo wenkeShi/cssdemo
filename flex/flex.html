@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex</title>
+	<style type="text/css">
+	.rater-component{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.rater-box {
+  font-size: 50px;
+  height: 50px;
+  /* width: 24rpx; */
+  line-height: 50px;
+  margin-right: 2px;
+  color: #ccc;
+}
+.rater-box.active{
+  color: #fc6;
+}
+.rater-box .rater-inner{
+  width: 100%;
+  height: 100%;
+   position: relative; 
+}
+.rater-box .rater-inner .rater-outer{
+  height: 100%;
+    position: absolute;
+  top: 0;
+  left: 0;  
+  /* color: #fc6; */
+  overflow: hidden;
+  z-index: 2;
+}
+	</style>
+</head>
+<body>
+		<div class="rater-component" >
+
+			<div class="rater-box active">
+				<div class="rater-inner">
+					<span>★</span>
+
+				</div>
+			</div>
+      <div class="rater-box active" >
+				<div class="rater-inner">
+					<span>★</span>
+
+				</div>
+			</div>
+      <div class="rater-box active">
+				<div class="rater-inner">
+					<span>★</span>
+
+				</div>
+			</div>
+      <div class="rater-box active" >
+				<div class="rater-inner">
+					<span>★</span>
+	
+				</div>
+			</div>
+      <div class="rater-box ">
+				<div class="rater-inner">
+					<span>★</span>
+					<div class="rater-outer" style="color : #fc6;width: 50%;">
+						★
+					</div>
+				</div>
+			</div>
+
+	</div>
+	<button onclick="getclick()">dian</button>
+</body>
+<script type="text/javascript">
+	function getclick(){
+		console.log('hello');
+	}
+</script>
+</html>

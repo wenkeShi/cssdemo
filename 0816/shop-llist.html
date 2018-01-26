@@ -68,6 +68,7 @@
 				display: block;
 			}
 		</style>
+		<!-- <script type="text/javascript">alert(hello)</script> -->
 	</head>
 	<body>
 		<div class='shop-list'>
@@ -113,6 +114,89 @@
 					<div class='content'>12</div>
 				</li>
 			</ul>
-		</div>	
+		</div>
+			  
+		<input type="text" name="hello" />
+<!-- 		<script type="text/javascript" async>
+			var inputIsHello = document.createEvent('CustomEvent');
+			inputIsHello.initEvent('hello',true,true,{vatt : 'hello'});
+			inputIsHello.myAttr = 'fuck';
+			window.addEventListener('hello', function(e){
+				console.log('my event');
+				console.log(e);
+			});
+			alert('hello');
+			document.querySelector('input[name="hello"]').ontextInput = function(e){
+				console.log(e);
+			};
+			// document.onready(function(){console.log('i am ready');});
+			window.onscroll = function(e){
+				console.log('scroll');
+			}
+			window.onmousewheel = function(e){
+				console.log(e);
+			}
+			// document.querySelector('input[name="hello"]').removeEventListener('click', function(){
+			// 	console.log('console');
+			// },true);
+			window.onclick = function(e){
+				console.log('onclick');
+			}
+			document.body.addEventListener('click',function(e){
+			  // Todo...
+			  console.log('hello');
+			  console.log(e.currentTarget);
+			  console.log(e);
+			  e.stopPropagation();
+			  // e.stopPropagation();
+			},true);
+			document.body.addEventListener('click',function(e){
+			  // Todo...
+			  console.log('hello body');
+			  console.log(e);
+			  e.cancelBubble = true;
+			  // e.stopPropagation();
+			});
+			document.querySelector('input[name="hello"]').oninput = function(e){
+				console.log(this.value);
+				if(this.value =='hello'){
+					e.target.dispatchEvent(inputIsHello);
+					e.target.click();
+				}
+			}
+			window.onwhell = function(e){
+				console.log(e);
+			}
+			window.onkeydown = function(e){
+				console.log('down');
+				console.log(e)
+			}
+			window.onkeyup = function(e){
+				console.log('up');
+				console.log(e)
+			}
+			window.onkeypress = function(e){
+				console.log('press');
+				console.log(e)
+			}
+
+			window.oncontextmenu = function(e){
+				e.preventDefault();
+				console.log('hahahah');
+			}
+			var a =22222222;
+			document.bbb = 11111;
+		</script>	 -->
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				console.log('hello');
+				
+				$('input').click(function(){
+					console.log('onclick="console.log(bbb);"');
+					$(this).after("<p>hello</p>");
+				})
+			});
+		</script>
 	</body>
 </html>
